@@ -10,7 +10,7 @@ IRC bot that let's you play [Cards Against Humanity](http://www.cardsagainsthuma
 * **!join** - Join to the currently running game.
 * **!quit** - Quit from the game.
 * **!cards** - Show the cards you have in your hand.
-* **!play # (#)** - Play a card from your hand, # being the number of the card in the list. Play as many numbers separated by spaces as the current card required.
+* **!play # (#)** - Play a card from your hand, # being the number of the card in the list. Play as many numbers separated by spaces as the current card requires.
 * **!winner #** - Pick a winner of the round, # being the number of the entry in the list. Only for the current *card czar*.
 * **!points** - Show players' *awesome points* in the current game.
 * **!list** - List players in the current game.
