@@ -689,9 +689,19 @@ var Game = function Game(channel, client, config, cmdArgs) {
             return -point.player.points;
         });
         var output = "";
+        var prev_pts = -1;
         _.each(sortedPlayers, function (point) {
-            output += point.player.nick + " " + point.points + " awesome points, ";
+            if (prev_pts != point.points) {
+                if (prev_pts != -1) {
+                    output = output.slice(0, -2);
+                    output += " (" + prev_pts + " awesome points); ";
+                }
+                prev_pts = point.points;
+            }
+            output += point.player.nick + ", ";
         });
+        output = output.slice(0, -2);
+        output += " (" + prev_pts + " awesome points); ";
         self.say('The most horrible people: ' + output.slice(0, -2));
     };
 
