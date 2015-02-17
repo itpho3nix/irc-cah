@@ -39,6 +39,7 @@ var Games = function Games() {
             self.games.push(game);
             var player = new Player(nick, user, hostname);
             game.addPlayer(player);
+            game.starter = player;
         }
     };
 

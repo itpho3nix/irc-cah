@@ -48,6 +48,7 @@ var Game = function Game(channel, client, config, cmdArgs) {
     self.points = [];
     self.notifyUsersPending = false;
     self.pointLimit = 0; // point limit for the game, defaults to 0 (== no limit)
+    self.starter = null;
 
     console.log('Loaded', config.cards.length, 'cards:');
     var questions = _.filter(config.cards, function(card) {
@@ -96,7 +97,16 @@ var Game = function Game(channel, client, config, cmdArgs) {
         self.state = STATES.STOPPED;
 
         if (typeof player !== 'undefined' && player !== null) {
-            self.say(player.nick + ' stopped the game.');
+            if (!self.starter) {
+                self.say('Error: starter is null');
+            }
+
+            if (player.nick === self.starter.nick) {
+                self.say(player.nick + ' stopped the game.');
+            } else {
+                self.say(player.nick + ': Only ' + self.starter.nick + ' can stop the game.');
+                return;
+            }
         } else if (pointLimitReached !== true) {
             self.say('Game has been stopped.');
         }
@@ -120,6 +130,7 @@ var Game = function Game(channel, client, config, cmdArgs) {
         delete self.decks;
         delete self.discards;
         delete self.table;
+        delete self.starter;
 
         // set topic
         self.setTopic(c.bold.yellow('No game is running. Type !start to begin one!'));
