@@ -713,7 +713,7 @@ var Game = function Game(channel, client, config, cmdArgs) {
             output += point.player.nick + ", ";
         });
         output = output.slice(0, -2);
-        output += " (" + prev_pts + " awesome points); ";
+        output += " (" + prev_pts + " awesome " + plural(prev_pts, "point") + "); ";
         self.say('The most horrible people: ' + output.slice(0, -2));
     };
 
