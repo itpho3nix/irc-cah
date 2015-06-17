@@ -59,8 +59,12 @@ var Games = function Games() {
         } else {
             var player = game.getPlayer({user: user, hostname: hostname});
             if (typeof(player) !== 'undefined') {
-                game.stop(game.getPlayer({user: user, hostname: hostname}));
-                self.games = _.without(self.games, game);
+                if (player === game.starter) {
+                    game.stop(player);
+                    self.games = _.without(self.games, game);
+                } else {
+                    client.say(channel, player.nick + ': Only ' + game.starter.nick + ' can stop the game.');
+                }
             }
         }
     };
