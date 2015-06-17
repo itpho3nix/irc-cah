@@ -369,7 +369,9 @@ var Game = function Game(channel, client, config, cmdArgs) {
             if (player.isCzar === true) {
                 self.say(player.nick + ': You are the card czar. The czar does not play. The czar makes other people do his dirty work.');
             } else {
-                if (cards.length != self.table.question.pick) {
+                if (player.hasPlayed === true) {
+                    self.say(player.nick + ': You have already played on this round.');
+                } else if (cards.length != self.table.question.pick) {
                     // invalid card count
                     self.say(player.nick + ': You must pick ' + self.table.question.pick + ' different ' + plural(self.table.question.pick, 'card') + '.');
                 } else {
