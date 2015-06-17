@@ -106,8 +106,6 @@ var Game = function Game(channel, client, config, cmdArgs) {
      * Stop game
      */
     self.stop = function (player, pointLimitReached) {
-        self.state = STATES.STOPPED;
-
         if (typeof player !== 'undefined' && player !== null) {
             if (!self.starter) {
                 self.say('Error: starter is null');
@@ -126,6 +124,8 @@ var Game = function Game(channel, client, config, cmdArgs) {
             // show points if played more than one round
             self.showPoints();
         }
+
+        self.state = STATES.STOPPED;
 
         // clear all timers
         clearTimeout(self.startTimeout);
