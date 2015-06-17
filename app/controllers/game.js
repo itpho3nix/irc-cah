@@ -107,16 +107,7 @@ var Game = function Game(channel, client, config, cmdArgs) {
      */
     self.stop = function (player, pointLimitReached) {
         if (typeof player !== 'undefined' && player !== null) {
-            if (!self.starter) {
-                self.say('Error: starter is null');
-            }
-
-            if (player.nick === self.starter.nick) {
-                self.say(player.nick + ' stopped the game.');
-            } else {
-                self.say(player.nick + ': Only ' + self.starter.nick + ' can stop the game.');
-                return;
-            }
+            self.say(player.nick + ' stopped the game.');
         } else if (pointLimitReached !== true) {
             self.say('Game has been stopped.');
         }
