@@ -371,7 +371,7 @@ var Game = function Game(channel, client, config, cmdArgs) {
             } else {
                 if (cards.length != self.table.question.pick) {
                     // invalid card count
-                    self.say(player.nick + ': You must pick ' + self.table.question.pick + ' different cards.');
+                    self.say(player.nick + ': You must pick ' + self.table.question.pick + ' different ' + plural(self.table.question.pick, 'card') + '.');
                 } else {
                     // get played cards
                     var playerCards;
@@ -740,13 +740,13 @@ var Game = function Game(channel, client, config, cmdArgs) {
                 self.say(c.bold('Status: ') + 'Round has ended and next one is starting.');
                 break;
             case STATES.STARTED:
-                self.say(c.bold('Status: ') + 'Game starts in ' + timeLeft + ' seconds. Need ' + playersNeeded + ' more players to start.');
+                self.say(c.bold('Status: ') + 'Game starts in ' + timeLeft + ' ' + plural(timeLeft, 'second') + '. Need ' + playersNeeded + ' more ' + plural(playersNeeded, 'player') + ' to start.');
                 break;
             case STATES.STOPPED:
                 self.say(c.bold('Status: ') + 'Game has been stopped.');
                 break;
             case STATES.WAITING:
-                self.say(c.bold('Status: ') + 'Not enough players to start. Need ' + playersNeeded + ' more players to start.');
+                self.say(c.bold('Status: ') + 'Not enough players to start. Need ' + playersNeeded + ' more ' + plural(playersNeeded, 'player') + ' to start.');
                 break;
             case STATES.PAUSED:
                 self.say(c.bold('Status: ') + 'Game is paused.');
