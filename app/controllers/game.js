@@ -4,6 +4,18 @@ var util = require('util'),
     Cards = require('../controllers/cards'),
     Card = require('../models/card');
 
+function plural(count, word, pluralForm) {
+    if (pluralForm === undefined) {
+        pluralForm = word + 's';
+    }
+
+    if (count === 1) {
+        return word;
+    } else {
+        return pluralForm;
+    }
+}
+
 /**
  * Available states for game
  * @type {{STOPPED: string, STARTED: string, PLAYABLE: string, PLAYED: string, ROUND_END: string, WAITING: string}}
@@ -209,7 +221,7 @@ var Game = function Game(channel, client, config, cmdArgs) {
         if(self.pointLimit > 0) {
             var winner = _.findWhere(self.players, {points: self.pointLimit});
             if(winner) {
-                self.say(winner.nick + ' has the limit of ' + self.pointLimit + ' awesome points and is the winner of the game! Congratulations!');
+                self.say(winner.nick + ' has the limit of ' + self.pointLimit + ' awesome ' + plural(self.pointLimit, 'point') + ' and is the winner of the game! Congratulations!');
                 self.stop(null, true);
                 return false;
             }
@@ -511,7 +523,7 @@ var Game = function Game(channel, client, config, cmdArgs) {
                 // update points object
                 _.findWhere(self.points, {player: owner}).points = owner.points;
                 // announce winner
-                self.say(c.bold('Winner is: ') + owner.nick + ' with "' + self.getFullEntry(self.table.question, winner.getCards()) + '" and gets one awesome point! ' + owner.nick + ' has ' + owner.points + ' awesome points.');
+                self.say(c.bold('Winner is: ') + owner.nick + ' with "' + self.getFullEntry(self.table.question, winner.getCards()) + '" and gets one awesome point! ' + owner.nick + ' has ' + owner.points + ' awesome ' + plural(owner.points, 'point') + '.');
                 self.clean();
                 self.nextRound();
             }
@@ -694,7 +706,7 @@ var Game = function Game(channel, client, config, cmdArgs) {
             if (prev_pts != point.points) {
                 if (prev_pts != -1) {
                     output = output.slice(0, -2);
-                    output += " (" + prev_pts + " awesome points); ";
+                    output += " (" + prev_pts + " awesome " + plural(prev_pts, "point") + "); ";
                 }
                 prev_pts = point.points;
             }
