@@ -182,13 +182,14 @@ var Games = function Games() {
         var channel = message.args[0],
             user = message.user,
             hostname = message.host,
-            game = self.findGame(channel);
+            game = self.findGame(channel),
+            cards = cmdArgs.map(function (x) { return x - 1; });
         if (typeof game === 'undefined') {
             client.say(channel, 'No game running. Start the game by typing !start.');
         } else {
             var player = game.getPlayer({user: user, hostname: hostname});
             if (typeof(player) !== 'undefined') {
-                game.playCard(cmdArgs, player);
+                game.playCard(cards, player);
             }
         }
     };
@@ -220,12 +221,13 @@ var Games = function Games() {
             user = message.user,
             hostname = message.host,
             game = self.findGame(channel);
+            cards = cmdArgs.map(function (x) { return x - 1; });
         if (typeof game === 'undefined') {
             client.say(channel, 'No game running. Start the game by typing !start.');
         } else {
             var player = game.getPlayer({user: user, hostname: hostname});
             if (typeof(player) !== 'undefined') {
-                game.selectWinner(cmdArgs[0], player);
+                game.selectWinner(cards[0], player);
             }
         }
     };
@@ -270,6 +272,7 @@ var Games = function Games() {
             user = message.user,
             hostname = message.host,
             game = self.findGame(channel);
+            cards = cmdArgs.map(function (x) { return x - 1; });
 
         if (typeof game === 'undefined'){
             client.say(channel, 'No game running. Start the game by typing !start.');
@@ -278,9 +281,9 @@ var Games = function Games() {
 
             if (typeof(player) !== 'undefined') {
                 if (game.state === Game.STATES.PLAYED) {
-                    game.selectWinner(cmdArgs[0], player);
+                    game.selectWinner(cards[0], player);
                 } else if (game.state === Game.STATES.PLAYABLE) {
-                    game.playCard(cmdArgs, player);
+                    game.playCard(cards, player);
                 } else {
                     client.say(channel, '!pick command not available in current state.');
                 }

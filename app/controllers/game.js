@@ -440,7 +440,7 @@ var Game = function Game(channel, client, config, cmdArgs) {
             // shuffle the entries
             self.table.answer = _.shuffle(self.table.answer);
             _.each(self.table.answer, function (cards, i) {
-                self.say(i + ": " + self.getFullEntry(self.table.question, cards.getCards()));
+                self.say((i + 1) + ": " + self.getFullEntry(self.table.question, cards.getCards()));
             }, this);
             // check that czar still exists
             var currentCzar = _.findWhere(this.players, {isCzar: true});
@@ -680,7 +680,7 @@ var Game = function Game(channel, client, config, cmdArgs) {
         if (typeof player !== 'undefined') {
             var cards = "";
             _.each(player.cards.getCards(), function (card, index) {
-                cards += c.bold(' [' + index + '] ') + card.value;
+                cards += c.bold(' [' + (index + 1) + '] ') + card.value;
             }, this);
             self.notice(player.nick, 'Your cards are:' + cards);
         }
