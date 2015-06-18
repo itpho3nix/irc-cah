@@ -27,7 +27,7 @@ function loadCardFile(identifier, filename) {
 
 // Initialize client configuration
 var config = _.extend(
-    require(__dirname + '/../config/irc.json),
+    require(__dirname + '/../config/irc.json'),
     { cards: [] }
 );
 
