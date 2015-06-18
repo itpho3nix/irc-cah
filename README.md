@@ -28,10 +28,10 @@ Some of these commands reply as notice. If you use [Irssi](http://www.irssi.org)
 * Node.js 0.10.*
 
 ##Run
-Run the bot by running `node app.js`, or if you want to run it with production settings instead of development, run `NODE_ENV=production node app.js`.
+Run the bot by running `node app.js`.
 
 ##Configuration
-Main configuration files are located in `config/env`. There are two files by default for two different environments, development and production (e.g. if you want to test the bot on a separate channel). For the `clientOptions` directive, refer to the [Node-IRC documentation](https://node-irc.readthedocs.org/en/latest/API.html#client).
+There is an example configuration file in `config/irc.json.example`. Make a copy of that called `irc.json` and edit it as appropriate. For the `clientOptions` directive, refer to the [Node-IRC documentation](https://node-irc.readthedocs.org/en/latest/API.html#client).
 
 It is possible to configure the bot to send a message to a user or channel after connecting to server or joining a specific channel using `connectCommands` and `joinCommands`. This can be used, for example, to identify with NickServ on networks that require it. See examples below.
 
