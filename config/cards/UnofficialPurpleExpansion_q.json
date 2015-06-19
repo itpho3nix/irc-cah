@@ -1,0 +1,378 @@
+[
+  {
+    "type": "Question",
+    "value": "911, what's your emergency?",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 1,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "'Cause girls just wanna have %s.",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 1,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "What are birds? %s.",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 1,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "The first thing I do in any emergency is secure my stash of %s.",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 1,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "%s. Now THAT's going on my screensaver.",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 1,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "My girlfriend and I make a great couple. We're always finishing each other's %s.",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 1,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "What is love?",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 1,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "My day started well: I took some acid and went for a bike ride. I'm not quite sure how I ended up %s.",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 1,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "Humanity is declining; we wasted all of our resources on %s.",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 1,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "My high school nickname was %s.",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 1,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "%s. All the cool kids are doing it!",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 1,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "I have never loved anything quite as much as I love %s.",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 1,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "%s almost doomed us all, but %s saved us just in time.",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 2,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "I can't decide if I get more of a thrill from ruining %s or %s.",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 2,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "Humanity at its core: %s.",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 1,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "I commisioned %s to make me %s.",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 2,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "%s is NOT a good substitute for %s.",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 2,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "Wow, I've never seen %s made out of %s before!",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 2,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "Civilisation is in ruins. The alien invasion is imminent. Only one thing stands between us and them: %s.",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 1,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "Dear Santa: this year, I want %s and %s for Christmas.",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 2,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "That's it! That's enough %s! BRING ME %s!",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 2,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "As of next month, %s will be freely available in every school nationwide.",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 1,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "The NHS is to be shut down due to a shortage of %s and an overabundance of %s.",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 2,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "Though it may seem unlikely, in some countries, %s is actually very common.",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 1,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "Is that %s in your pocket or are you just happy to see me?",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 1,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "After his uncle Hans told him a bedtime story, Timmy has been having nightmares about The %s Fairy.",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 1,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "So, I'm left wondering ... why did %s suddenly appear on my computer screen?",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 1,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "%s was inside you all along.",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 1,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "North Korea claim to have discovered the secret lair of %s.",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 1,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "%s. The best thing since sliced bread.",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 1,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "I used to maintain a blog about %s.",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 1,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "%s and %s. All you need for a DIY sex change.",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 2,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "Today we'll be observing %s in its natural habitat. Look, it's %s!",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 2,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "So, I'm slipping her panties down and %s just pops out.",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 1,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "The opposite of love is not hate, it is %s.",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 1,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "I like my e-cigarettes like I like my condoms: %s flavoured.",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 1,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "For the love of all that is holy how did %s end up stapled to %s?",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 2,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "\"What a lovely present, Grandma! I've never owned %s before. Er ... what's it for?\"",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 1,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "%s in one hand, %s in the other, it's %s time.",
+    "keep": "Yes",
+    "draw": 2,
+    "pick": 3,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "%s really fucks you up, man, I was seeing %s for days.",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 2,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "I can't stop chewing on %s.",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 1,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "God, I'm such an idiot. I can't believe I traded %s for %s.",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 1,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "I read a book about %s. It really changed how I think about %s.",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 2,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "School sucked for me, bullies stuffed %s down my shorts every lunchtime.",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 1,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "I never, ever go to bed without %s.",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 1,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "Fuck. %s ... again.",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 1,
+    "source": "Unofficial Purple Expansion"
+  },
+  {
+    "type": "Question",
+    "value": "The doctor told me %s would fix all of my %s problems.",
+    "keep": "Yes",
+    "draw": 0,
+    "pick": 2,
+    "source": "Unofficial Purple Expansion"
+  }
+]
