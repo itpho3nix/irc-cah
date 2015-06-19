@@ -186,7 +186,9 @@ var Games = function Games() {
             client.say(channel, 'No game running. Start the game by typing !start.');
         } else {
             var player = game.getPlayer({user: user, hostname: hostname});
-            game.swap(player);
+            if (typeof(player) !== 'undefined') {
+                game.swap(player);
+            }
         }
     };
 
