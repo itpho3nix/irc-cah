@@ -277,6 +277,15 @@ var Game = function Game(channel, client, config, cmdArgs) {
      * Swap cards in and get 10 new cards. Takes away an awesome point.
      */
     self.swap = function (player) {
+        if (self.players.length < 5) {
+            self.say(player.nick + ": Swapping can only be done when there's 5 or more players.")
+        }
+        if (player.isCzar === true) {
+            self.say(player.nick + ': You can not swap yours cards as the card czar.');
+        }
+        if (player.hasPlayed === true) {
+            self.say(player.nick + ': You have already played on this round.');
+        }
         // Remove points and update master object
         if (_.findWhere(self.points, {player: player}).points > 0) {
             player.points--;
@@ -286,8 +295,10 @@ var Game = function Game(channel, client, config, cmdArgs) {
             return;
         }
         player.cards.reset();
+        player.hasPlayed = true;
+        player.inactiveRounds = 0;
         // Tell channel
-        this.say(player.nick + " traded in all their cards and lost a point.");
+        this.say(player.nick + " traded in all their cards! They can not play this turn, and have lost a point.");
         // Deal 10 new cards.
         for (var i = player.cards.numCards(); i < 10 + this.questionCard.draw; i++) {
             this.checkDecks();
