@@ -61,6 +61,7 @@ var Game = function Game(channel, client, config, cmdArgs) {
     self.notifyUsersPending = false;
     self.pointLimit = 0; // point limit for the game, defaults to 0 (== no limit)
     self.starter = null;
+    self.questionCard = null;
 
     console.log('Loaded', config.cards.length, 'cards:');
     var questions = _.filter(config.cards, function(card) {
@@ -286,7 +287,7 @@ var Game = function Game(channel, client, config, cmdArgs) {
         // Tell channel
         this.say(player.nick + " traded in all their cards and lost a point.");
         // Deal 10 new cards.
-        for (var i = player.cards.numCards(); i < 10; i++) {
+        for (var i = player.cards.numCards(); i < 10 + this.questionCard.draw; i++) {
             this.checkDecks();
             var card = this.decks.answer.pickCards();
             player.cards.addCard(card);
@@ -337,6 +338,7 @@ var Game = function Game(channel, client, config, cmdArgs) {
     self.playQuestion = function () {
         self.checkDecks();
         var card = self.decks.question.pickCards();
+        this.questionCard = card;
         // replace all instance of %s with underscores for prettier output
         var value = card.value.replace(/\%s/g, '___');
         // check if special pick & draw rules
