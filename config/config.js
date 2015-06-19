@@ -61,7 +61,14 @@ var cardFiles = {
     OfficialCanadianExpansionAnswers: __dirname + '/../config/cards/OfficialCanadianExpansion_a.json',
     OfficialChristmasExpansionAnswers: __dirname + '/../config/cards/OfficialChristmasExpansion_a.json',
     BGGAnswers: __dirname + '/../config/cards/BGG_a.json',
-    CustomAnswers: __dirname + '/../config/cards/Custom_a.json'
+    CustomAnswers: __dirname + '/../config/cards/Custom_a.json',
+    // ##IRCAH PICKS
+    Official4thExpansionQuestions: __dirname + '/../config/cards/Official4thExpansion_q.json',
+    Official4thExpansionAnswers: __dirname + '/../config/cards/Official4thExpansion_a.json',
+// PLANNED    Official5thExpansionQuestions: __dirname + '/../config/cards/Official5thExpansion_q.json',
+// PLANNED    Official5thExpansionAnswers: __dirname + '/../config/cards/Official5thExpansion_a.json',
+// PLANNED    Official6thExpansionQuestions: __dirname + '/../config/cards/Official6thExpansion_q.json',
+// PLANNED    Official6thExpansionAnswers: __dirname + '/../config/cards/Official6thExpansion_a.json'
 };
 
 // Init validator
