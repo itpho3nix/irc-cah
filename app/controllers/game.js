@@ -117,6 +117,8 @@ var Game = function Game(channel, client, config, cmdArgs) {
             self.showPoints();
         }
 
+        self.unvoice(_.pluck(self.players, 'nick'));
+
         self.state = STATES.STOPPED;
 
         // clear all timers
@@ -603,6 +605,7 @@ var Game = function Game(channel, client, config, cmdArgs) {
     self.addPlayer = function (player) {
         if (typeof self.getPlayer({user: player.user, hostname: player.hostname}) === 'undefined') {
             self.players.push(player);
+            self.voice(player.nick);
             self.say(player.nick + ' has joined the game');
             // check if player is returning to game
             var pointsPlayer = _.findWhere(self.points, {user: player.user, hostname: player.hostname});
@@ -659,6 +662,7 @@ var Game = function Game(channel, client, config, cmdArgs) {
                 console.log('Add card ', card.text, 'to discard');
                 self.discards.answer.addCard(card);
             });
+            self.unvoice(player.nick);
             if (options.silent !== true) {
                 self.say(player.nick + ' has left the game');
             }
@@ -872,6 +876,44 @@ var Game = function Game(channel, client, config, cmdArgs) {
      */
     self.say = function (string) {
         self.client.say(self.channel, string);
+    };
+
+    self.voice = function (nicks) {
+        if (nicks instanceof Array) {
+            var buf = [];
+
+            nicks.forEach(function (nick) {
+                buf.push(nick);
+
+                if (buf.length === 4) {
+                    self.client.send("MODE", self.channel, "+vvvv", buf[0] ? buf[0] : "", buf[1] ? buf[1] : "", buf[2] ? buf[2] : "", buf[3] ? buf[3] : "");
+                    buf = [];
+                }
+            });
+
+            self.client.send("MODE", self.channel, "+vvvv", buf[0] ? buf[0] : "", buf[1] ? buf[1] : "", buf[2] ? buf[2] : "", buf[3] ? buf[3] : "");
+        } else {
+            self.client.send("MODE", self.channel, "+v", nicks);
+        }
+    };
+
+    self.unvoice = function (nicks) {
+        if (nicks instanceof Array) {
+            var buf = [];
+
+            nicks.forEach(function (nick) {
+                buf.push(nick);
+
+                if (buf.length === 4) {
+                    self.client.send("MODE", self.channel, "-vvvv", buf[0] ? buf[0] : "", buf[1] ? buf[1] : "", buf[2] ? buf[2] : "", buf[3] ? buf[3] : "");
+                    buf = [];
+                }
+            });
+
+            self.client.send("MODE", self.channel, "-vvvv", buf[0] ? buf[0] : "", buf[1] ? buf[1] : "", buf[2] ? buf[2] : "", buf[3] ? buf[3] : "");
+        } else {
+            self.client.send("MODE", self.channel, "-v", nicks);
+        }
     };
 
     self.pm = function (nick, string) {
