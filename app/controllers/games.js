@@ -59,7 +59,7 @@ var Games = function Games() {
         } else {
             var player = game.getPlayer({user: user, hostname: hostname});
             if (typeof(player) !== 'undefined') {
-                if (player === game.starter) {
+                if (_.isEqual(player, game.starter)) {
                     game.stop(player);
                     self.games = _.without(self.games, game);
                 } else {
