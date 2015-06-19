@@ -11,7 +11,7 @@
     "type": "Question",
     "value": "Before %s, all we had was %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "CaH Official 2nd Expansion"
   },
@@ -27,7 +27,7 @@
     "type": "Question",
     "value": "I spent my whole life working toward %s, only to have it ruined by %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "CaH Official 2nd Expansion"
   },
@@ -43,7 +43,7 @@
     "type": "Question",
     "value": "If God didn't want us to enjoy %s, he wouldn't have given us %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "CaH Official 2nd Expansion"
   },

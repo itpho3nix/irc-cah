@@ -3,7 +3,7 @@
     "type": "Question",
     "value": "%s is a slippery slope that leads to %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "CaH Official Base Set"
   },
@@ -107,7 +107,7 @@
     "type": "Question",
     "value": "And the Academy Award for %s goes to %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "CaH Official Base Set"
   },
@@ -179,7 +179,7 @@
     "type": "Question",
     "value": "For my next trick, I will pull %s out of %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "CaH Official Base Set"
   },
@@ -235,7 +235,7 @@
     "type": "Question",
     "value": "I never truly understood %s until I encountered %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "CaH Official Base Set"
   },
@@ -267,7 +267,7 @@
     "type": "Question",
     "value": "In a world ravaged by %s, our only solace is %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "CaH Official Base Set"
   },
@@ -291,7 +291,7 @@
     "type": "Question",
     "value": "In his new summer comedy, Rob Schneider is %s trapped in the body of %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "CaH Official Base Set"
   },
@@ -315,7 +315,7 @@
     "type": "Question",
     "value": "In M. Night Shyamalan's new movie, Bruce Willis discovers that %s had really been %s all along.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "CaH Official Base Set"
   },
@@ -411,7 +411,7 @@
     "type": "Question",
     "value": "Rumor has it that Vladimir Putin's favorite dish is %s stuffed with %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "CaH Official Base Set"
   },
@@ -443,7 +443,7 @@
     "type": "Question",
     "value": "That's right, I killed %s. How, you ask? %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "CaH Official Base Set"
   },
@@ -787,7 +787,7 @@
     "type": "Question",
     "value": "When I was tripping on acid, %s turned into %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "CaH Official Base Set"
   },

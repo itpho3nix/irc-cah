@@ -11,7 +11,7 @@
     "type": "Question",
     "value": "%s: Hours of fun. Easy to use. Perfect for %s!",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "CaH Official 3rd Expansion"
   },
@@ -27,7 +27,7 @@
     "type": "Question",
     "value": "After months of practice with %s, I think I’m finally ready for %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "CaH Official 3rd Expansion"
   },
@@ -75,7 +75,7 @@
     "type": "Question",
     "value": "Having problems with %s? Try %s!",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "CaH Official 3rd Expansion"
   },
@@ -107,7 +107,7 @@
     "type": "Question",
     "value": "Listen, son. If you want to get involved with %s, I won’t stop you. Just steer clear of %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "CaH Official 3rd Expansion"
   },
@@ -139,7 +139,7 @@
     "type": "Question",
     "value": "My life is ruled by a vicious cycle of %s and %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "CaH Official 3rd Expansion"
   },
@@ -179,7 +179,7 @@
     "type": "Question",
     "value": "When you get right down to it, %s is just %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "CaH Official 3rd Expansion"
   },
@@ -187,7 +187,7 @@
     "type": "Question",
     "value": "With enough time and pressure, %s will turn into %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "CaH Official 3rd Expansion"
   }

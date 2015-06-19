@@ -11,7 +11,7 @@
     "type": "Question",
     "value": "Chili's special tonight: %s with a side of %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },
@@ -35,7 +35,7 @@
     "type": "Question",
     "value": "Sizzler's special tonight: %s with a side of %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },

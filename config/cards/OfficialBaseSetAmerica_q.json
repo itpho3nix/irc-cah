@@ -27,7 +27,7 @@
     "type": "Question",
     "value": "Lifetime presents %s, the story of %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "CaH Official Base Set"
   },

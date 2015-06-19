@@ -3,7 +3,7 @@
     "type": "Question",
     "value": "After unifying the GST and PST the Government can now afford to provide %s for %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "CaH Official Canadian Expansion"
   },
@@ -19,7 +19,7 @@
     "type": "Question",
     "value": "CTV presents %s, the story of %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "CaH Official Canadian Expansion"
   },
@@ -27,7 +27,7 @@
     "type": "Question",
     "value": "If %s came in two-fours Canada would be more %s?",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "CaH Official Canadian Expansion"
   },

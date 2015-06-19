@@ -19,7 +19,7 @@
     "type": "Question",
     "value": "%s gives a whole new meaning to %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },
@@ -35,7 +35,7 @@
     "type": "Question",
     "value": "%s in the front seat; %s in the back seat; gotta make my mind up, which seat do I take?",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },
@@ -51,7 +51,7 @@
     "type": "Question",
     "value": "%s is a classic case of %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },
@@ -59,7 +59,7 @@
     "type": "Question",
     "value": "%s is a gateway to %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },
@@ -91,7 +91,7 @@
     "type": "Question",
     "value": "%s is nothing %s can't fix.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },
@@ -243,7 +243,7 @@
     "type": "Question",
     "value": "A hot new alternative medical practice involves placing %s in %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },
@@ -259,7 +259,7 @@
     "type": "Question",
     "value": "A little-known provision of Obamacare allows %s access to %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },
@@ -267,7 +267,7 @@
     "type": "Question",
     "value": "According to an old Romanian superstition, %s will happen if you don't %s before going to bed.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },
@@ -283,7 +283,7 @@
     "type": "Question",
     "value": "An international tribunal has found %s guilty of %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },
@@ -379,7 +379,7 @@
     "type": "Question",
     "value": "Dear Sir or Madam, We regret to inform you that the Office of %s has denied your request for %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },
@@ -459,7 +459,7 @@
     "type": "Question",
     "value": "Hey Rocky, watch me pull %s out of my %s!",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },
@@ -467,7 +467,7 @@
     "type": "Question",
     "value": "How did this %s get into my %s?",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },
@@ -523,7 +523,7 @@
     "type": "Question",
     "value": "I firmly believe that for the economy to recover, the Department of %s needs to change its policies on %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },
@@ -579,7 +579,7 @@
     "type": "Question",
     "value": "I love %s in my %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },
@@ -603,7 +603,7 @@
     "type": "Question",
     "value": "I might be a %s, but at least I'm no %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },
@@ -611,7 +611,7 @@
     "type": "Question",
     "value": "I really hate %s at work. So I take care of it with %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },
@@ -675,7 +675,7 @@
     "type": "Question",
     "value": "If I weren't so busy with %s, I'd be %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },
@@ -691,7 +691,7 @@
     "type": "Question",
     "value": "In a pinch, %s can be substituted with %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },
@@ -715,7 +715,7 @@
     "type": "Question",
     "value": "In Nintendo's new game, you must fight off wave after wave of %s in order to save %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },
@@ -779,7 +779,7 @@
     "type": "Question",
     "value": "It rubs %s on its skin or else it gets %s again.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },
@@ -795,7 +795,7 @@
     "type": "Question",
     "value": "It was more uncomfortable than %s at a %s convention.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },
@@ -827,7 +827,7 @@
     "type": "Question",
     "value": "Legend of Zelda: The %s of %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },
@@ -843,7 +843,7 @@
     "type": "Question",
     "value": "Michael Bay's new three-hour action epic pits %s against %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },
@@ -859,7 +859,7 @@
     "type": "Question",
     "value": "My favorite book is the classic tale of %s, written by %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },
@@ -931,7 +931,7 @@
     "type": "Question",
     "value": "Next, on Martha Stewart's Living, spruce up your %s with %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },
@@ -939,7 +939,7 @@
     "type": "Question",
     "value": "Next, on the Twilight Zone: a parallel universe where %s is replaced by %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },
@@ -955,7 +955,7 @@
     "type": "Question",
     "value": "Nothing feels better than %s on %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },
@@ -979,7 +979,7 @@
     "type": "Question",
     "value": "One day a man is bitten by %s and is transformed into %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },
@@ -1003,7 +1003,7 @@
     "type": "Question",
     "value": "Remember, %s is never funny. Unless it involves %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },
@@ -1123,7 +1123,7 @@
     "type": "Question",
     "value": "The local experimental college is now offering a course on %s led by %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },
@@ -1171,7 +1171,7 @@
     "type": "Question",
     "value": "The only problem with %s is that there isn't enough %s in it.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },
@@ -1267,7 +1267,7 @@
     "type": "Question",
     "value": "This year's Pulitzer Prize winning novel was chosen for its brilliant %s, as a metaphor for %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },
@@ -1291,7 +1291,7 @@
     "type": "Question",
     "value": "What two things do you need to survive on a deserted island?",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },
@@ -1555,7 +1555,7 @@
     "type": "Question",
     "value": "When life gives you %s, make %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },
@@ -1619,7 +1619,7 @@
     "type": "Question",
     "value": "Why did the %s have to %s?",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },
@@ -1651,7 +1651,7 @@
     "type": "Question",
     "value": "Wonder Twin powers, activate! Shape of %s. Form of %s.",
     "keep": "Yes",
-    "draw": 1,
+    "draw": 0,
     "pick": 2,
     "source": "BGG Suggestions"
   },
