@@ -271,6 +271,32 @@ var Game = function Game(channel, client, config, cmdArgs) {
     };
 
     /**
+     * Swap cards in and get 10 new cards. Takes away an awesome point.
+     */
+    self.swap = function (player) {
+        // Remove points and update master object
+        if (_.findWhere(self.points, {player: player}).points > 0) {
+            player.points--;
+            _.findWhere(self.points, {player: player}).points = player.points;
+        } else {
+            this.say(player.nick + ": You don't have any points so you can't trade!");
+            return;
+        }
+        player.cards.reset();
+        // Tell channel
+        this.say(player.nick + " traded in all their cards and lost a point.");
+        // Deal 10 new cards.
+        for (var i = player.cards.numCards(); i < 10; i++) {
+            this.checkDecks();
+            var card = this.decks.answer.pickCards();
+            player.cards.addCard(card);
+            card.owner = player;
+        }
+        // Show player their new cards
+        this.showCards(player);
+    };
+
+    /**
      * Clean up table after round is complete
      */
     self.clean = function () {

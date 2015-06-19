@@ -172,6 +172,25 @@ var Games = function Games() {
     };
 
     /**
+     * Swap players cards for a point.
+     * @param client
+     * @param message
+     * @param cmdArgs
+     */
+    self.swap = function (client, message, cmdArgs) {
+        var channel = message.args[0],
+            user = message.user,
+            hostname = message.host,
+            game = self.findGame(channel);
+        if (typeof game === 'undefined') {
+            client.say(channel, 'No game running. Start the game by typing !start.');
+        } else {
+            var player = game.getPlayer({user: user, hostname: hostname});
+            game.swap(player);
+        }
+    };
+
+    /**
      * Play cards
      * @param client
      * @param message
