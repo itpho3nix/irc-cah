@@ -278,13 +278,16 @@ var Game = function Game(channel, client, config, cmdArgs) {
      */
     self.swap = function (player) {
         if (self.players.length < 5) {
-            self.say(player.nick + ": Swapping can only be done when there's 5 or more players.")
+            self.say(player.nick + ": Swapping can only be done when there's 5 or more players.");
+            return;
         }
         if (player.isCzar === true) {
             self.say(player.nick + ': You can not swap yours cards as the card czar.');
+            return;
         }
         if (player.hasPlayed === true) {
             self.say(player.nick + ': You have already played on this round.');
+            return;
         }
         // Remove points and update master object
         if (_.findWhere(self.points, {player: player}).points > 0) {
