@@ -16,4 +16,5 @@ module.exports = function(app) {
     app.cmd('resume', '', games.resume);
     app.cmd('pick', '', games.pick);
     app.cmd('swap', '', games.swap);
+    app.cmd('leave', '', games.quit);
 };
