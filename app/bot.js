@@ -70,7 +70,7 @@ exports.init = function () {
         if (config.clientOptions.channels.indexOf(to) >= 0) {
             // public commands
             _.each(commands, function (c) {
-                if (cmd === c.cmd) {
+                if (cmd.toLowerCase() === c.cmd.toLowerCase()) {
                     console.log('command: ' + c.cmd);
                     // check user mode
                     if (checkUserMode(message, c.mode)) {
