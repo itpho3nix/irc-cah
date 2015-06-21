@@ -686,6 +686,11 @@ var Game = function Game(channel, client, config, cmdArgs) {
                 self.showEntries();
             }
 
+            // REMOVE POINTS.
+            // This stops people !quit !join ing for cards and retaining points
+            player.points = 0;
+            self.points = _.without(self.points, _.findWhere(self.points, {player: player}));
+
             // check czar
             if (self.state === STATES.PLAYED && self.czar === player) {
                 self.say('The czar has fled the scene. So I will pick the winner on this round.');
