@@ -356,7 +356,7 @@ var Game = function Game(channel, client, config, cmdArgs) {
         var card = self.decks.question.pickCards();
         this.questionCard = card;
         // replace all instance of %s with underscores for prettier output
-        var value = card.value.replace(/\%s/g, '___');
+        var value = card.value.replace(/\%s/g, '_____');
         // check if special pick & draw rules
         if (card.pick > 1) {
             value += c.bold(' [PICK ' + card.pick + ']');
